@@ -52,7 +52,7 @@ function NewTodoForm({addTodo}) {
         </Form.Select>
       </Form.Label>
       </Form.Group>
-      <Button onClick={handleSubmit}>Submit ToDo</Button>
+      <Button type="submit">Submit</Button>
     </Form>
   )
 }
