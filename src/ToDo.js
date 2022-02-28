@@ -7,9 +7,9 @@ function ToDo({todo, updateTodo, deleteTodo}) {
 
   return (
     <div>
-      <p>{todo.id}</p>
-      <p>{todo.description}</p>
-      <p>{todo.priority}</p>
+      <p>ID: {todo.id}</p>
+      <p>DESCRIPTION: {todo.description}</p>
+      <p>PRIORITY: {todo.priority}</p>
     </div>
   )
 }
