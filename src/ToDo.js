@@ -1,12 +1,15 @@
+import { useState } from "react";
+function ToDo({todoupdateTodo, deleteTodo}) {
+  const [id, setId] = useState(0);
 
-function ToDo({todo}) {
+  // add todo fn
+  // update todo fn
+  // delete todo fn
+    // all should alter state of todos in parent fns
+
   return (
     <div>
-      <p>Content</p>
-      <p>Priority</p>
-      <p>Update</p>
-      <p>Delete</p>
-      <p>Add ToDo</p>
+      TODO
     </div>
   )
 }
