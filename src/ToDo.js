@@ -1,6 +1,4 @@
-import { useState } from "react";
-function ToDo({todoupdateTodo, deleteTodo}) {
-  const [id, setId] = useState(0);
+function ToDo({todo, updateTodo, deleteTodo}) {
 
   // add todo fn
   // update todo fn
@@ -9,7 +7,9 @@ function ToDo({todoupdateTodo, deleteTodo}) {
 
   return (
     <div>
-      TODO
+      <p>{todo.id}</p>
+      <p>{todo.description}</p>
+      <p>{todo.priority}</p>
     </div>
   )
 }
