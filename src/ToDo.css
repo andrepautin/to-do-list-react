@@ -1,17 +1,17 @@
 .btn {
     margin-left: 10px;
-    flex: 0.25;
 }
 
 .todo {
     display: flex;
     align-items: center;
-    max-width: inherit;
 }
 
 .description {
     text-align: left;
     flex: 1;
+    overflow-wrap: break-word;
+    max-width: 40%;
 }
 
 .priority {

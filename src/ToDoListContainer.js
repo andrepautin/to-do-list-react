@@ -1,5 +1,6 @@
 import ToDoList from "./ToDoList";
 import Container from "react-bootstrap/Container";
+import Alert from "react-bootstrap/Alert";
 import './ToDoListContainer.css';
 import { useState, useEffect } from "react";
 
@@ -24,7 +25,7 @@ function ToDoListContainer() {
   }
 
   return (
-    <Container>
+    <Container className="container">
       <ToDoList todos={todos} addTodo={addTodo} updateTodo={updateTodo} deleteTodo={deleteTodo}/>
     </Container>
   )
