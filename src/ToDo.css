@@ -1,0 +1,15 @@
+.todo {
+    display: flex;
+    justify-content: center;
+}
+
+.description {
+    width: 30%;
+    text-align: left;
+    overflow-wrap: break-word;
+}
+
+.priority {
+    width: 30%;
+    text-align: right;
+}
