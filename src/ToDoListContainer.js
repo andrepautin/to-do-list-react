@@ -6,13 +6,14 @@ function ToDoListContainer() {
   const [todos, setTodos] = useState([]);
 
   // function to handle newly added, updated, or deleted todos
+
   function addTodo(todo) {
     setTodos(todos => [...todos, todo]);
   }
 
   function updateTodo(todo) {
     for (let i = 0; i < todos.length; i++) {
-      if (todos[i] === todo.id) {
+      if (todos[i].id === todo.id) {
         todos[i] = todo;
         setTodos([...todos]);
       }

@@ -1,6 +1,6 @@
 import ToDo from "./ToDo";
 // import { v4 as uuidv4 } from 'uuid';
-// import { useState } from "react";
+// import { useEffect } from "react";
 import NewTodoForm from "./NewTodoForm";
 import "./ToDoList.css";
 function ToDoList({todos, addTodo, updateTodo, deleteTodo}) {
@@ -11,7 +11,9 @@ function ToDoList({todos, addTodo, updateTodo, deleteTodo}) {
         <NewTodoForm addTodo={addTodo}/>
       </div>
       <div>
-        {todos && todos.map(
+        {todos 
+        && todos.sort((a, b) => a.priority - b.priority) 
+        && todos.map(
           (todo) => 
           <ToDo 
             key={todo.id} 

@@ -1,6 +1,11 @@
+.btn {
+    margin-left: 10px;
+}
+
 .todo {
     display: flex;
     justify-content: center;
+    margin-top: 5px;
 }
 
 .description {
