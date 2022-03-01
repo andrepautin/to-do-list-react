@@ -1,22 +1,20 @@
 .btn {
-    margin-left: 20px;
+    margin-left: 10px;
+    flex: 0.25;
 }
 
 .todo {
     display: flex;
-    justify-content: center;
     align-items: center;
+    max-width: inherit;
 }
 
 .description {
-    width: 30%;
     text-align: left;
-    overflow-wrap: break-word;
     flex: 1;
 }
 
 .priority {
-    width: 30%;
     text-align: right;
     flex: 1;
 }

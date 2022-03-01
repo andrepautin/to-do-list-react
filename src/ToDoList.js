@@ -16,7 +16,7 @@ function ToDoList({todos, addTodo, updateTodo, deleteTodo}) {
         && todos.sort((a, b) => a.priority - b.priority) 
         && todos.map(
           (todo) => 
-          <ListGroupItem key={todo.id}>
+          <ListGroupItem key={todo.id} className="list-item">
             <ToDo 
               todo={todo} 
               updateTodo={updateTodo} 
