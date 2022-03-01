@@ -9,7 +9,7 @@
 
 .description {
     text-align: left;
-    flex: 1;
+    flex: 3;
     overflow-wrap: break-word;
     max-width: 40%;
 }
