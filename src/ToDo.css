@@ -1,18 +1,17 @@
 .todo {
     display: flex;
-    justify-content: space-between;
-    /* min-width: fit-content; */
+    justify-content: space-around;
 }
 
 .description {
     flex: 1;
     overflow-wrap: break-word;
     min-width: 60%;
+    
 }
 
 .priority {
     flex: 1;
-    /* margin-left: 10px; */
     min-width: fit-content;
 }
 

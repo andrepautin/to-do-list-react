@@ -1,19 +1,16 @@
 import { useState } from "react";
 import "./ToDo.css";
 import Button from "react-bootstrap/Button";
-import { Form, FormControl, FormGroup, FormLabel, FormSelect } from "react-bootstrap";
+import { Form, FormControl, FormGroup, FormSelect } from "react-bootstrap";
 function ToDo({todo, updateTodo, deleteTodo}) {
   const [description, setDescription] = useState(todo.description);
   const [priority, setPriority] = useState(todo.priority);
-  // update todo fn
-  // delete todo fn
-    // all should alter state of todos in parent fns
-  // function edit() {
-  //   // should allow user to edit info
-  //   // updateTodo(todo)
-  // }
 
-  function edit() {
+  function edit(evt) {
+    evt.preventDefault();
+    if (description === "") {
+      alert("Description is required");
+    }
     todo.description = description;
     todo.priority = priority;
     updateTodo(todo);
@@ -44,7 +41,7 @@ function ToDo({todo, updateTodo, deleteTodo}) {
           />
         </FormGroup>
         <FormGroup className="priority">
-          <FormSelect onChange={handlePriorityChange}>
+          <FormSelect value={priority} onChange={handlePriorityChange}>
             <option value={1}>1</option>
             <option value={2}>2</option>
             <option value={3}>3</option>

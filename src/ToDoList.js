@@ -5,7 +5,6 @@ import NewTodoForm from "./NewTodoForm";
 import { ListGroup, ListGroupItem } from "react-bootstrap";
 import "./ToDoList.css";
 function ToDoList({todos, addTodo, updateTodo, deleteTodo}) {
-
   return (
     <div className="todo-list">
       <div>
