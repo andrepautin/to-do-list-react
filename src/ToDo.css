@@ -1,20 +1,26 @@
-.btn {
-    margin-left: 10px;
-}
-
 .todo {
     display: flex;
-    align-items: center;
+    justify-content: space-between;
+    /* min-width: fit-content; */
 }
 
 .description {
-    text-align: left;
-    flex: 3;
+    flex: 1;
     overflow-wrap: break-word;
-    max-width: 40%;
+    min-width: 60%;
 }
 
 .priority {
-    text-align: right;
     flex: 1;
+    /* margin-left: 10px; */
+    min-width: fit-content;
+}
+
+.edit-form {
+    display: inherit;
+    min-width: fit-content;
+}
+
+.save {
+    justify-content: flex-end;
 }

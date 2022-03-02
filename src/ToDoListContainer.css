@@ -3,5 +3,7 @@
     justify-content: center;
     height: 90vh;
     width: 80vw;
+    min-width: 550px;
+    max-width: 600px;
     background-color: lightslategray;
 }
